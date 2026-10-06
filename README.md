@@ -8,6 +8,8 @@ Sitio institucional de HK Entertainment, hecho en HTML, CSS y JavaScript puro (s
 index.html    → estructura y contenido de la página
 styles.css    → estilos e identidad visual
 script.js     → menú móvil y pequeños detalles de interacción
+juegos-web.js → sección "Jugar": pestañas y reproductor de juegos en el navegador
+juegos-web.css→ estilos de la sección "Jugar"
 src/          → imágenes (logo, íconos de juegos, arte de los destacados)
 ```
 
@@ -36,6 +38,20 @@ El sitio referencia estos archivos por nombre exacto; tienen que estar en una ca
 3. En GitHub, andá a **Settings → Pages**.
 4. En "Build and deployment", elegí **Deploy from a branch**, seleccioná la rama `main` y la carpeta `/ (root)`.
 5. Guardá. GitHub te va a dar una URL del estilo `https://TU-USUARIO.github.io/TU-REPO/` (o `https://TU-USUARIO.github.io/` si el repo se llama `TU-USUARIO.github.io`). Puede tardar uno o dos minutos en estar disponible.
+
+## Juegos jugables en el navegador (sección "Jugar")
+
+Los juegos se ejecutan desde este mismo sitio: cada uno es una build WebGL guardada en `juegos/<id>/`. La lista está al principio de `juegos-web.js`, en el arreglo `GAMES`.
+
+Para sumar un juego:
+
+1. Exportá la build WebGL desde Unity (**File → Build Profiles / Build Settings → Web**).
+   En **Player Settings → Publishing Settings** poné **Compression Format: Disabled**, así funciona en cualquier servidor sin configuración extra.
+2. Subí el contenido de la build (`index.html`, `Build/`, `TemplateData/`) a `juegos/<id>/`, por ejemplo `juegos/chabonsio/index.html`.
+3. En `juegos-web.js`, copiá un bloque de `GAMES` y completá título, autor, género, descripción, `ratio` y `src` (`juegos/<id>/index.html`).
+4. Opcional: una portada en `src/<id>-poster.jpg` y completar `poster`.
+
+Si la build todavía no está subida, la pestaña muestra "estará disponible muy pronto" en lugar de un error.
 
 ## Contenido a revisar/actualizar
 

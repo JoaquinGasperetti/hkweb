@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="juegos-web.css">
 </head>
 <body>
 
@@ -29,6 +30,7 @@
     <nav class="primary-nav" id="primaryNav">
       <a href="#inicio">Inicio</a>
       <a href="#juegos">Juegos</a>
+      <a href="#jugar">Jugar</a>
       <a href="#equipo">Equipo</a>
       <a href="#contacto">Contacto</a>
       <a class="nav-cta" href="https://play.google.com/store/apps/dev?id=6928241970397486127" target="_blank" rel="noopener">Google Play</a>
@@ -203,6 +205,25 @@
     </div>
   </section>
 
+  <!-- JUGAR EN EL NAVEGADOR -->
+  <section class="section section--alt" id="jugar">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Jugá en el navegador</h2>
+        <p>Juegos de nuestro equipo que se juegan directamente acá, sin descargar nada.</p>
+      </div>
+
+      <div class="play-tabs" id="playTabs" role="tablist" aria-label="Juegos disponibles en el navegador"></div>
+
+      <div class="play-stage" id="playStage" role="tabpanel">
+        <div class="play-viewport" id="playViewport"></div>
+        <div class="play-info" id="playInfo"></div>
+      </div>
+
+      <noscript><p>Para jugar desde la página necesitás activar JavaScript.</p></noscript>
+    </div>
+  </section>
+
   <!-- EQUIPO -->
   <section class="section section--alt" id="equipo">
     <div class="wrap">
@@ -300,5 +321,6 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="juegos-web.js" defer></script>
 </body>
 </html>
