@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HK Entertainment — Estudio indie de videojuegos</title>
 <meta name="description" content="HK Entertainment: estudio indie de videojuegos. Del fútbol al cyberpunk, pasando por un mono biomecánico y una mina de bitcoin.">
+<link rel="canonical" href="https://hkentertainment.com.ar/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HK Entertainment">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="HK Entertainment — Estudio indie de videojuegos">
+<meta property="og:description" content="Estudio indie de videojuegos de Argentina. Del fútbol al cyberpunk, pasando por un mono biomecánico y una mina de bitcoin.">
+<meta property="og:url" content="https://hkentertainment.com.ar/">
+<meta property="og:image" content="https://hkentertainment.com.ar/src/cybersimian.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="src/Logo HK c_hamster.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +39,7 @@
     <nav class="primary-nav" id="primaryNav">
       <a href="#inicio">Inicio</a>
       <a href="#juegos">Juegos</a>
-      <a href="#jugar">Jugar</a>
+      <a href="#jugar" data-jugar-link hidden>Jugar</a>
       <a href="#equipo">Equipo</a>
       <a href="#contacto">Contacto</a>
       <a class="nav-cta" href="https://play.google.com/store/apps/dev?id=6928241970397486127" target="_blank" rel="noopener">Google Play</a>
@@ -86,7 +95,7 @@
       <div class="featured-grid">
 
         <article class="feature-panel feature-panel--flagship" data-glitch="CYBERSIMIAN: TRIALS">
-          <img class="feature-cover" src="src/cybersimian.jpg" alt="Arte de Cybersimian: Trials" loading="lazy">
+          <video class="feature-cover" src="src/Game.mp4" poster="src/cybersimian.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Fragmento de juego de Cybersimian: Trials: M03 haciendo parkour"></video>
           <div class="feature-panel-tag">Proyecto insignia · Unreal Engine 5</div>
           <h3 class="glitch-title" data-text="Cybersimian: Trials">Cybersimian: Trials</h3>
           <p>
@@ -95,6 +104,9 @@
           <p class="feature-meta">Demo técnica de dos niveles de parkour, jugable ahora en itch.io.</p>
           <div class="itch-embed">
             <iframe frameborder="0" src="https://itch.io/embed/3628286?bg_color=1c1b27&amp;fg_color=f4f2f8&amp;link_color=38e6df&amp;border_color=ff3f7f" width="552" height="167" title="Cybersimian: Trials en itch.io" loading="lazy"><a href="https://hkentertainment.itch.io/cybersimiantrials">Cybersimian:Trials DEMO by HKentertainment</a></iframe>
+          </div>
+          <div class="feature-actions">
+            <a class="btn btn-ghost" href="catalogo/cybersimian-trials/">Ver ficha completa</a>
           </div>
         </article>
 
@@ -105,7 +117,10 @@
           <p>
             Un puzzle cooperativo cyberpunk para dos jugadores online. Nuestro primer gran lanzamiento en Google Play, pensado para resolverse en equipo, a distancia.
           </p>
-          <a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.Cyberchimps" target="_blank" rel="noopener">Ver en Google Play</a>
+          <div class="feature-actions">
+            <a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.Cyberchimps" target="_blank" rel="noopener">Ver en Google Play</a>
+            <a class="btn btn-ghost" href="catalogo/cyberchimps/">Más info</a>
+          </div>
         </article>
 
       </div>
@@ -123,7 +138,10 @@
             <h4>Messi Simulator</h4>
             <p class="game-genre">Fútbol arcade · +10 mil descargas</p>
             <p>Subí de nivel a tu crack y llevalo a la cima del fútbol mundial.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.MessiSimulator" target="_blank" rel="noopener">Google Play</a>
+            <div class="game-links">
+              <a href="catalogo/messi-simulator/">Más info</a>
+              <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.MessiSimulator" target="_blank" rel="noopener">Google Play</a>
+            </div>
           </div>
         </li>
 
@@ -133,7 +151,10 @@
             <h4>Héroes Ebrios</h4>
             <p class="game-genre">Juego de fiesta</p>
             <p>Un juego de beber pensado para partidas entre amigos, con mucho humor de por medio.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.heroesebrios" target="_blank" rel="noopener">Google Play</a>
+            <div class="game-links">
+              <a href="catalogo/heroes-ebrios/">Más info</a>
+              <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.heroesebrios" target="_blank" rel="noopener">Google Play</a>
+            </div>
           </div>
         </li>
 
@@ -143,7 +164,10 @@
             <h4>Reto 7D</h4>
             <p class="game-genre">Autoconocimiento</p>
             <p>Un desafío de siete días pensado para trabajar el autoconocimiento paso a paso.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.retocoach" target="_blank" rel="noopener">Google Play</a>
+            <div class="game-links">
+              <a href="catalogo/reto-7d/">Más info</a>
+              <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.retocoach" target="_blank" rel="noopener">Google Play</a>
+            </div>
           </div>
         </li>
 
@@ -153,7 +177,10 @@
             <h4>Grass Cutter 3D</h4>
             <p class="game-genre">Simulador · Mow Tycoon</p>
             <p>Un simulador relajante de corte de césped con progresión estilo tycoon.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.Pasto" target="_blank" rel="noopener">Google Play</a>
+            <div class="game-links">
+              <a href="catalogo/grass-cutter-3d/">Más info</a>
+              <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.Pasto" target="_blank" rel="noopener">Google Play</a>
+            </div>
           </div>
         </li>
 
@@ -163,7 +190,10 @@
             <h4>Cowboy Idle Frontier</h4>
             <p class="game-genre">Idle · Western</p>
             <p>Construí tu imperio del viejo oeste a tu propio ritmo, en modo idle.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.HKEntertainment.CowboyIdleFrontier" target="_blank" rel="noopener">Google Play</a>
+            <div class="game-links">
+              <a href="catalogo/cowboy-idle-frontier/">Más info</a>
+              <a href="https://play.google.com/store/apps/details?id=com.HKEntertainment.CowboyIdleFrontier" target="_blank" rel="noopener">Google Play</a>
+            </div>
           </div>
         </li>
 
@@ -173,7 +203,10 @@
             <h4>TortuGO</h4>
             <p class="game-genre">Carreras casuales</p>
             <p>Carreras de tortugas tan simples como adictivas.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.TortuGO" target="_blank" rel="noopener">Google Play</a>
+            <div class="game-links">
+              <a href="catalogo/tortugo/">Más info</a>
+              <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.TortuGO" target="_blank" rel="noopener">Google Play</a>
+            </div>
           </div>
         </li>
 
@@ -186,11 +219,15 @@
         </div>
         <div class="upcoming-grid">
           <article class="upcoming-card">
-            <h4>Bogato</h4>
+            <h4><img class="upcoming-logo" src="src/BogatoLogo.png" width="312" height="96" alt="Bogato" loading="lazy"></h4>
             <p>
               Un juego de mundo abierto ambientado en la actualidad: enfrentamientos con dragones y sus entrenadores, de forma amistosa o no tanto, en dos mapas explorables: la ciudad y "La Secta". Estamos armando un sistema de benchmark con datos de beta testers para definir los requisitos recomendados de hardware.
             </p>
             <p class="upcoming-status">En desarrollo — Unreal Engine</p>
+            <div class="upcoming-actions">
+              <a class="btn btn-primary" href="https://discord.gg/WAVmpsfwn9" target="_blank" rel="noopener">Sumate a la beta en Discord</a>
+              <a href="catalogo/bogato/">Más info</a>
+            </div>
           </article>
           <article class="upcoming-card">
             <h4>Found Footage</h4>
@@ -198,6 +235,9 @@
               Investigá una planta nuclear abandonada en busca de anomalías. Nadie sabe bien qué criaturas podrían habitar esa zona radioactiva.
             </p>
             <p class="upcoming-status">En desarrollo</p>
+            <div class="upcoming-actions">
+              <a href="catalogo/found-footage/">Más info</a>
+            </div>
           </article>
         </div>
       </div>
@@ -206,7 +246,7 @@
   </section>
 
   <!-- JUGAR EN EL NAVEGADOR -->
-  <section class="section section--alt" id="jugar">
+  <section class="section section--alt" id="jugar" hidden>
     <div class="wrap">
       <div class="section-head">
         <h2>Jugá en el navegador</h2>
@@ -306,6 +346,7 @@
           <li><a href="https://www.tiktok.com/@hkentertainment7?lang=es" target="_blank" rel="noopener">TikTok</a></li>
           <li><a href="https://play.google.com/store/apps/dev?id=6928241970397486127" target="_blank" rel="noopener">Google Play</a></li>
           <li><a href="https://hkentertainment.itch.io/" target="_blank" rel="noopener">itch.io</a></li>
+          <li><a href="https://discord.gg/WAVmpsfwn9" target="_blank" rel="noopener">Discord</a></li>
         </ul>
       </div>
     </div>
@@ -315,12 +356,13 @@
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <p>© <span id="year"></span> HK Entertainment</p>
+    <p>© <span id="year"></span> HK Entertainment · <a href="mailto:contacto@hkentertainment.com.ar">contacto@hkentertainment.com.ar</a></p>
     <a href="#top">Volver arriba</a>
   </div>
 </footer>
 
 <script src="script.js"></script>
 <script src="juegos-web.js" defer></script>
+<script src="video-loop.js" defer></script>
 </body>
 </html>

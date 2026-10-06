@@ -1,0 +1,271 @@
+/* ---------------------------------------------------
+   HK Entertainment — páginas de cada juego (catalogo/<slug>/)
+   Usa las variables definidas en styles.css
+--------------------------------------------------- */
+
+/* ---------- Hero ---------- */
+
+.gp-hero {
+  padding: 40px 0 64px;
+  background:
+    radial-gradient(circle at 100% 0%, rgba(255, 63, 127, 0.16), transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(56, 230, 223, 0.10), transparent 50%),
+    var(--ink);
+}
+
+.gp-back {
+  display: inline-block;
+  margin-bottom: 28px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+.gp-back:hover { color: var(--cyan); }
+
+.gp-hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+.gp-hero-grid--solo { grid-template-columns: 1fr; max-width: 760px; }
+
+.gp-title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin-bottom: 14px;
+}
+.gp-title--logo { margin-bottom: 18px; }
+.gp-title--logo img {
+  display: block;
+  width: min(312px, 100%);
+  height: auto;
+}
+
+.gp-tagline {
+  font-size: 1.15rem;
+  color: var(--text);
+  max-width: 52ch;
+  margin-bottom: 20px;
+}
+
+.gp-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+.gp-badges li {
+  padding: 5px 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel);
+  color: var(--amber);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.gp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.gp-note {
+  margin-top: 14px;
+  font-size: 0.85rem;
+}
+
+.gp-media {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line);
+  background: var(--panel);
+  box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.7);
+}
+.gp-media--cover {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.gp-media--icon {
+  width: min(240px, 60%);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 36px;
+  margin-inline: auto;
+}
+video.gp-media {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+/* ---------- Secciones ---------- */
+
+.gp-section {
+  padding: 56px 0;
+  border-top: 1px solid var(--line);
+}
+.gp-section--alt { background: var(--ink-soft); }
+.gp-section h2 {
+  font-size: clamp(1.3rem, 2.6vw, 1.7rem);
+  margin-bottom: 20px;
+}
+
+.gp-prose { max-width: 68ch; }
+.gp-prose p { font-size: 1.02rem; }
+
+.gp-list {
+  display: grid;
+  gap: 10px;
+  max-width: 68ch;
+}
+.gp-list li {
+  position: relative;
+  padding-left: 26px;
+  color: var(--text-dim);
+}
+.gp-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: linear-gradient(120deg, var(--pink), var(--violet));
+}
+.gp-list--compact { gap: 6px; font-size: 0.92rem; }
+
+.gp-video {
+  position: relative;
+  max-width: 820px;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #000;
+}
+.gp-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.gp-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+.gp-gallery a {
+  display: block;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.gp-gallery a:hover {
+  border-color: var(--cyan);
+  transform: translateY(-3px);
+}
+.gp-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.gp-controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+  margin: 0;
+}
+.gp-controls div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 16px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+}
+.gp-controls dt { margin: 0; flex: none; }
+.gp-controls dd { margin: 0; color: var(--text-dim); font-size: 0.92rem; }
+.gp-controls kbd {
+  display: inline-block;
+  min-width: 44px;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-bottom-width: 3px;
+  border-radius: 8px;
+  background: var(--panel-alt);
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.gp-reqs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  max-width: 920px;
+}
+.gp-req {
+  padding: 24px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+}
+.gp-req h3 {
+  font-size: 1.05rem;
+  color: var(--amber);
+  margin-bottom: 14px;
+}
+
+/* ---------- Más juegos ---------- */
+
+.gp-others {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 14px;
+}
+.gp-other {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  color: var(--text);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.gp-other:hover {
+  border-color: var(--cyan);
+  color: var(--text);
+  transform: translateY(-3px);
+}
+.gp-other img {
+  flex: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: var(--ink);
+}
+.gp-other span { display: flex; flex-direction: column; min-width: 0; }
+.gp-other strong { font-family: var(--font-display); font-size: 0.98rem; }
+.gp-other small { color: var(--amber); font-size: 0.75rem; }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 860px) {
+  .gp-hero-grid { grid-template-columns: 1fr; gap: 32px; }
+  .gp-reqs { grid-template-columns: 1fr; }
+  .gp-section { padding: 44px 0; }
+}

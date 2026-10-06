@@ -8,7 +8,10 @@
 //   2. Copiá un bloque de GAMES y completá los datos.
 // `ratio` es la proporción de pantalla del juego: [ancho, alto].
 // `poster` es opcional (imagen de portada, por ejemplo src/<id>-poster.jpg).
-// Si la build todavía no está subida, la pestaña avisa "próximamente".
+//
+// La sección "Jugá en el navegador" (y su link del menú) permanece OCULTA hasta que
+// al menos una build exista en el servidor. Cuando subas la primera, aparece sola,
+// con una pestaña por cada juego que ya esté disponible.
 
 (function () {
   'use strict';
@@ -36,14 +39,16 @@
     }
   ];
 
+  var sectionEl = document.getElementById('jugar');
+  var navLinkEl = document.querySelector('[data-jugar-link]');
   var tabsEl = document.getElementById('playTabs');
   var viewportEl = document.getElementById('playViewport');
   var infoEl = document.getElementById('playInfo');
   if (!tabsEl || !viewportEl || !infoEl) return;
 
+  var available = [];   // juegos cuya build existe en el servidor
   var current = null;   // juego seleccionado
   var frameEl = null;   // contenedor del juego (también se usa para pantalla completa)
-  var playing = false;  // true cuando el juego ya está cargado en el iframe
 
   function el(tag, className, text) {
     var node = document.createElement(tag);
@@ -63,7 +68,7 @@
 
   // ---- Pestañas ----
   function buildTabs() {
-    GAMES.forEach(function (game, i) {
+    available.forEach(function (game, i) {
       var tab = el('button', 'play-tab', game.title);
       tab.type = 'button';
       tab.id = 'play-tab-' + game.id;
@@ -74,7 +79,7 @@
         var dir = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0;
         if (!dir) return;
         e.preventDefault();
-        var next = GAMES[(i + dir + GAMES.length) % GAMES.length];
+        var next = available[(i + dir + available.length) % available.length];
         select(next);
         document.getElementById('play-tab-' + next.id).focus();
       });
@@ -83,7 +88,7 @@
   }
 
   function markSelected(game) {
-    GAMES.forEach(function (g) {
+    available.forEach(function (g) {
       var tab = document.getElementById('play-tab-' + g.id);
       var on = g === game;
       tab.setAttribute('aria-selected', on ? 'true' : 'false');
@@ -94,22 +99,9 @@
   // ---- Selección de juego ----
   function select(game) {
     current = game;
-    playing = false;
     markSelected(game);
-    renderPoster(game, true);
+    renderPoster(game);
     renderInfo(game);
-
-    // Si la build todavía no está subida al servidor, avisamos en vez de mostrar un 404
-    buildExists(game, function (ok) {
-      if (!ok && current === game && !playing) renderPoster(game, false);
-    });
-  }
-
-  function buildExists(game, done) {
-    if (typeof fetch !== 'function') return done(true);
-    fetch(game.src, { method: 'HEAD' })
-      .then(function (res) { done(res.ok); })
-      .catch(function () { done(true); }); // sin red o sin servidor: lo intentamos igual
   }
 
   function newFrame(game) {
@@ -122,25 +114,20 @@
   }
 
   // Pantalla previa: el juego no se carga hasta que se aprieta "Jugar"
-  function renderPoster(game, available) {
+  function renderPoster(game) {
     var frame = newFrame(game);
     var poster = el('div', 'play-poster');
     if (game.poster) poster.style.backgroundImage = 'url("' + game.poster + '")';
 
-    if (available) {
-      var start = el('button', 'play-start', 'Jugar ahora');
-      start.type = 'button';
-      start.setAttribute('aria-label', 'Jugar ' + game.title);
-      start.addEventListener('click', function () { load(game); });
-      poster.appendChild(start);
-    } else {
-      poster.appendChild(el('p', 'play-note', 'Este juego estará disponible para jugar acá muy pronto.'));
-    }
+    var start = el('button', 'play-start', 'Jugar ahora');
+    start.type = 'button';
+    start.setAttribute('aria-label', 'Jugar ' + game.title);
+    start.addEventListener('click', function () { load(game); });
+    poster.appendChild(start);
     frame.appendChild(poster);
   }
 
   function load(game) {
-    playing = true;
     var frame = newFrame(game);
     var iframe = document.createElement('iframe');
     iframe.src = game.src;
@@ -177,7 +164,24 @@
     infoEl.appendChild(actions);
   }
 
-  if (!GAMES.length) return;
-  buildTabs();
-  select(GAMES[0]);
+  // ---- Arranque ----
+  function buildExists(game) {
+    if (typeof fetch !== 'function') return Promise.resolve(true);
+    return fetch(game.src, { method: 'HEAD' })
+      .then(function (res) { return res.ok; })
+      .catch(function () { return location.protocol === 'file:'; }); // vista previa local
+  }
+
+  function show(games) {
+    if (!games.length) return; // ninguna build subida: la sección sigue oculta
+    available = games;
+    if (sectionEl) sectionEl.hidden = false;
+    if (navLinkEl) navLinkEl.hidden = false;
+    buildTabs();
+    select(available[0]);
+  }
+
+  Promise.all(GAMES.map(buildExists)).then(function (flags) {
+    show(GAMES.filter(function (g, i) { return flags[i]; }));
+  });
 })();

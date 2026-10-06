@@ -10,6 +10,11 @@ styles.css    → estilos e identidad visual
 script.js     → menú móvil y pequeños detalles de interacción
 juegos-web.js → sección "Jugar": pestañas y reproductor de juegos en el navegador
 juegos-web.css→ estilos de la sección "Jugar"
+video-loop.js → reproduce los videos en loop solo cuando se ven en pantalla
+paginas-juego.css → estilos de las páginas de cada juego
+catalogo/     → una página por juego (generadas, no se editan a mano)
+tools/        → juegos.json (datos de cada juego) y generar_paginas.py
+sitemap.xml, robots.txt → para buscadores (se regeneran con el script)
 src/          → imágenes (logo, íconos de juegos, arte de los destacados)
 ```
 
@@ -52,6 +57,30 @@ Para sumar un juego:
 4. Opcional: una portada en `src/<id>-poster.jpg` y completar `poster`.
 
 Si la build todavía no está subida, la pestaña muestra "estará disponible muy pronto" en lugar de un error.
+
+## Páginas de cada juego (catalogo/<juego>/)
+
+Cada juego tiene su propia página, con título, descripción, capturas, requisitos y botones de descarga, pensada para que aparezca en buscadores.
+
+Las páginas **se generan** a partir de `tools/juegos.json`. Para cambiar un texto o agregar un juego:
+
+1. Editá `tools/juegos.json`.
+2. Desde la raíz del repo corré `python3 tools/generar_paginas.py` (no necesita instalar nada).
+3. Subí los cambios (las carpetas `catalogo/`, `sitemap.xml` y `robots.txt` se actualizan solas).
+
+Si agregás un juego nuevo, sumá también el link en `index.html` (tarjeta del catálogo).
+
+## Video de Cybersimian
+
+El video en loop del inicio y de la página de Cybersimian es `src/Game.mp4` (el nombre tiene que coincidir exactamente, con mayúscula). Para que cargue rápido, comprimilo a menos de 3 MB, sin audio:
+
+```
+ffmpeg -i Game.mp4 -vf "scale=1280:-2" -c:v libx264 -crf 28 -preset slow -an -movflags +faststart src/Game.mp4
+```
+
+## Beta de Bogato
+
+El botón "Sumate a la beta en Discord" apunta a la invitación del Discord de HK. Si cambia el link, reemplazalo en `index.html` y en `tools/juegos.json` (y volvé a generar las páginas).
 
 ## Contenido a revisar/actualizar
 

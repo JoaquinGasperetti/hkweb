@@ -1,0 +1,371 @@
+{
+  "dominio": "https://hkentertainment.com.ar",
+  "discord": "https://discord.gg/WAVmpsfwn9",
+  "juegos": [
+    {
+      "slug": "cybersimian-trials",
+      "titulo": "Cybersimian: Trials",
+      "tagline": "Un mono biomecánico. Una estética cyberpunk. Un escape imposible. ¿Hasta dónde podés correr?",
+      "meta": "Cybersimian: Trials, demo técnica de parkour cyberpunk en Unreal Engine 5. Sos M03, un mono biomecánico que escapa de una IA implacable. Descargala gratis para PC.",
+      "badges": [
+        "Parkour · Acción",
+        "Unreal Engine 5",
+        "Windows (PC)",
+        "Demo técnica"
+      ],
+      "icono": "src/cybersimian.jpg",
+      "og_image": "src/cybersimian.jpg",
+      "video": {
+        "src": "src/Game.mp4",
+        "poster": "src/cybersimian.jpg"
+      },
+      "plataforma": "Windows",
+      "genero": "Parkour",
+      "descripcion": [
+        "En un futuro no muy lejano, los experimentos con inteligencia aumentada se salieron de control. Vos sos M03, un mono biomecánico creado para pruebas extremas de agilidad y reacción. Pero esta vez no estás siguiendo órdenes: estás escapando.",
+        "Corré por salas de pruebas generadas proceduralmente, esquivá obstáculos, hacé parkour en las paredes y huí de la implacable IA guardián que te pisa los talones. Cuanto más corrés, más rápido y difícil se vuelve.",
+        "M03 despierta sin voz dentro de una instalación experimental controlada por AR-IA, una inteligencia artificial tan filosa como sarcástica. Es nuestro proyecto más ambicioso hasta ahora: parkour, estética cyberpunk y un humor negro que rompe la cuarta pared, con guiños a Mirror's Edge, Portal y Cyberpunk 2077."
+      ],
+      "caracteristicas": [
+        "Parkour 3D fluido y controles precisos",
+        "Estética cyberpunk neón con escenarios dinámicos y futuristas",
+        "Salas de prueba generadas proceduralmente",
+        "Una IA enemiga que no te da respiro",
+        "Banda sonora intensa y sintetizada, estilo retro-futurista",
+        "Optimizado para PC"
+      ],
+      "controles": [
+        [
+          "WASD",
+          "Moverse"
+        ],
+        [
+          "Espacio",
+          "Saltar"
+        ],
+        [
+          "C",
+          "Agacharse"
+        ],
+        [
+          "Ctrl",
+          "Alternar caminar / correr"
+        ],
+        [
+          "F",
+          "Dash, para atravesar láseres"
+        ],
+        [
+          "Esc",
+          "Pausa"
+        ]
+      ],
+      "requisitos": {
+        "Mínimos": [
+          "Windows 10 (64 bits)",
+          "Intel Core i5-7400 / AMD Ryzen 3 1200",
+          "8 GB de RAM",
+          "NVIDIA GTX 1050 Ti / AMD Radeon RX 560 (4 GB de VRAM, DirectX 11)",
+          "Gráficos integrados: Radeon Vega 8 (Ryzen 5 3400G o superior) o Intel Iris Xe (Core i5-1135G7 o superior)",
+          "Se recomienda SSD para tiempos de carga más rápidos"
+        ],
+        "Recomendados": [
+          "Windows 10 / 11 (64 bits)",
+          "Intel Core i7-8700 / AMD Ryzen 5 3600",
+          "16 GB de RAM",
+          "NVIDIA RTX 2060 / AMD Radeon RX 5700 (6 GB de VRAM, DirectX 12)",
+          "Gráficos integrados: Radeon 680M (Ryzen 7 6800U o superior) o Intel Arc iGPU (Core Ultra 7 o superior)",
+          "SSD y drivers gráficos actualizados para 1080p Ultra a 60 FPS"
+        ]
+      },
+      "youtube": "MWfdh9J1RU8",
+      "capturas": [
+        [
+          "https://img.itch.zone/aW1hZ2UvMzYyODI4Ni8yOTAxMjgyMS5wbmc=/347x500/G2pfne.png",
+          "https://img.itch.zone/aW1hZ2UvMzYyODI4Ni8yOTAxMjgyMS5wbmc=/original/F8kD9U.png"
+        ],
+        [
+          "https://img.itch.zone/aW1hZ2UvMzYyODI4Ni8yMzY2OTgzNS5wbmc=/347x500/IU6Qop.png",
+          "https://img.itch.zone/aW1hZ2UvMzYyODI4Ni8yMzY2OTgzNS5wbmc=/original/oFzmR2.png"
+        ],
+        [
+          "https://img.itch.zone/aW1hZ2UvMzYyODI4Ni8yMzY2OTgzNy5wbmc=/347x500/J2kk7I.png",
+          "https://img.itch.zone/aW1hZ2UvMzYyODI4Ni8yMzY2OTgzNy5wbmc=/original/NwIIEw.png"
+        ],
+        [
+          "https://img.itch.zone/aW1hZ2UvMzYyODI4Ni8yMzY2OTgzOS5wbmc=/347x500/KlVKvj.png",
+          "https://img.itch.zone/aW1hZ2UvMzYyODI4Ni8yMzY2OTgzOS5wbmc=/original/btXCr%2F.png"
+        ],
+        [
+          "https://img.itch.zone/aW1hZ2UvMzYyODI4Ni8yMzY2OTgzOC5wbmc=/347x500/AU%2FW77.png",
+          "https://img.itch.zone/aW1hZ2UvMzYyODI4Ni8yMzY2OTgzOC5wbmc=/original/%2FInJlx.png"
+        ],
+        [
+          "https://img.itch.zone/aW1hZ2UvMzYyODI4Ni8yMzY2OTgzNC5wbmc=/347x500/7b0BGE.png",
+          "https://img.itch.zone/aW1hZ2UvMzYyODI4Ni8yMzY2OTgzNC5wbmc=/original/VjOJC6.png"
+        ]
+      ],
+      "ctas": [
+        {
+          "texto": "Descargar la demo gratis",
+          "url": "https://hkentertainment.itch.io/cybersimiantrials",
+          "estilo": "primary"
+        }
+      ],
+      "nota_descarga": "La demo técnica pesa alrededor de 3,8 GB y se descarga desde itch.io."
+    },
+    {
+      "slug": "cyberchimps",
+      "titulo": "CyberChimps",
+      "tagline": "Un puzzle cooperativo cyberpunk para dos jugadores online.",
+      "meta": "CyberChimps: puzzle cooperativo cyberpunk para dos jugadores online, hecho en Unity para Android. Resolvelo en equipo, a distancia. Disponible en Google Play.",
+      "badges": [
+        "Puzzle cooperativo",
+        "Unity",
+        "Android",
+        "Publicado"
+      ],
+      "icono": "src/cyberchimps.jpg",
+      "og_image": "src/cyberchimps.jpg",
+      "plataforma": "Android",
+      "genero": "Puzzle cooperativo",
+      "descripcion": [
+        "CyberChimps es un puzzle cooperativo cyberpunk para dos jugadores online, pensado para resolverse en equipo, a distancia.",
+        "Fue nuestro primer gran lanzamiento en Google Play."
+      ],
+      "ctas": [
+        {
+          "texto": "Descargar en Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.HKemtrentainment.Cyberchimps",
+          "estilo": "primary"
+        }
+      ]
+    },
+    {
+      "slug": "messi-simulator",
+      "titulo": "Messi Simulator",
+      "tagline": "Subí de nivel a tu crack y llevalo a la cima del fútbol mundial.",
+      "meta": "Messi Simulator: juego de fútbol arcade para Android con más de 10 mil descargas. Subí de nivel a tu crack y llevalo a la cima del fútbol mundial.",
+      "badges": [
+        "Fútbol arcade",
+        "Android",
+        "+10 mil descargas"
+      ],
+      "icono": "src/messi-simulator.png",
+      "og_image": "src/messi-simulator.png",
+      "plataforma": "Android",
+      "genero": "Deportes",
+      "descripcion": [
+        "Messi Simulator es un juego de fútbol arcade para Android. Subí de nivel a tu crack y llevalo a la cima del fútbol mundial.",
+        "Supera las 10 mil descargas en Google Play."
+      ],
+      "ctas": [
+        {
+          "texto": "Descargar en Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.HKemtrentainment.MessiSimulator",
+          "estilo": "primary"
+        }
+      ]
+    },
+    {
+      "slug": "heroes-ebrios",
+      "titulo": "Héroes Ebrios",
+      "tagline": "Un juego de beber pensado para partidas entre amigos, con mucho humor de por medio.",
+      "meta": "Héroes Ebrios: juego de fiesta para Android pensado para partidas entre amigos, con mucho humor. Disponible en Google Play.",
+      "badges": [
+        "Juego de fiesta",
+        "Android"
+      ],
+      "icono": "src/heroes-ebrios.png",
+      "og_image": "src/heroes-ebrios.png",
+      "plataforma": "Android",
+      "genero": "Juego de fiesta",
+      "descripcion": [
+        "Héroes Ebrios es un juego de fiesta para Android, pensado para jugarse entre amigos y con mucho humor de por medio."
+      ],
+      "ctas": [
+        {
+          "texto": "Descargar en Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.HKemtrentainment.heroesebrios",
+          "estilo": "primary"
+        }
+      ]
+    },
+    {
+      "slug": "reto-7d",
+      "titulo": "Reto 7D",
+      "tagline": "Un desafío de siete días pensado para trabajar el autoconocimiento paso a paso.",
+      "meta": "Reto 7D: app de autoconocimiento para Android. Un desafío de siete días para trabajar paso a paso. Disponible en Google Play.",
+      "badges": [
+        "Autoconocimiento",
+        "Android"
+      ],
+      "icono": "src/reto-7d.png",
+      "og_image": "src/reto-7d.png",
+      "plataforma": "Android",
+      "genero": "Autoconocimiento",
+      "descripcion": [
+        "Reto 7D es un desafío de siete días pensado para trabajar el autoconocimiento paso a paso, desde tu celular."
+      ],
+      "ctas": [
+        {
+          "texto": "Descargar en Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.HKemtrentainment.retocoach",
+          "estilo": "primary"
+        }
+      ]
+    },
+    {
+      "slug": "grass-cutter-3d",
+      "titulo": "Grass Cutter 3D",
+      "tagline": "Un simulador relajante de corte de césped con progresión estilo tycoon.",
+      "meta": "Grass Cutter 3D: simulador relajante de corte de césped con progresión estilo tycoon (Mow Tycoon) para Android. Disponible en Google Play.",
+      "badges": [
+        "Simulador · Mow Tycoon",
+        "Android"
+      ],
+      "icono": "src/grass-cutter.png",
+      "og_image": "src/grass-cutter.png",
+      "plataforma": "Android",
+      "genero": "Simulador",
+      "descripcion": [
+        "Grass Cutter 3D es un simulador relajante de corte de césped con progresión estilo tycoon (Mow Tycoon)."
+      ],
+      "ctas": [
+        {
+          "texto": "Descargar en Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.HKemtrentainment.Pasto",
+          "estilo": "primary"
+        }
+      ]
+    },
+    {
+      "slug": "cowboy-idle-frontier",
+      "titulo": "Cowboy Idle Frontier",
+      "tagline": "Construí tu imperio del viejo oeste a tu propio ritmo, en modo idle.",
+      "meta": "Cowboy Idle Frontier: juego idle ambientado en el viejo oeste para Android. Construí tu imperio a tu propio ritmo. Disponible en Google Play.",
+      "badges": [
+        "Idle · Western",
+        "Android"
+      ],
+      "icono": "src/cowboy-idle.png",
+      "og_image": "src/cowboy-idle.png",
+      "plataforma": "Android",
+      "genero": "Idle",
+      "descripcion": [
+        "Cowboy Idle Frontier es un juego idle ambientado en el viejo oeste. Construí tu imperio a tu propio ritmo."
+      ],
+      "ctas": [
+        {
+          "texto": "Descargar en Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.HKEntertainment.CowboyIdleFrontier",
+          "estilo": "primary"
+        }
+      ]
+    },
+    {
+      "slug": "tortugo",
+      "titulo": "TortuGO",
+      "tagline": "Carreras de tortugas tan simples como adictivas.",
+      "meta": "TortuGO: carreras casuales de tortugas, tan simples como adictivas, para Android. Disponible en Google Play.",
+      "badges": [
+        "Carreras casuales",
+        "Android"
+      ],
+      "icono": "src/tortugo.png",
+      "og_image": "src/tortugo.png",
+      "plataforma": "Android",
+      "genero": "Carreras",
+      "descripcion": [
+        "TortuGO es un juego de carreras casuales de tortugas: simple de entender y difícil de soltar."
+      ],
+      "ctas": [
+        {
+          "texto": "Descargar en Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.HKemtrentainment.TortuGO",
+          "estilo": "primary"
+        }
+      ]
+    },
+    {
+      "slug": "bogato",
+      "titulo": "Bogato",
+      "logo": {
+        "src": "src/BogatoLogo.png",
+        "ancho": 312,
+        "alto": 96
+      },
+      "tagline": "Un mundo de dragones, magia y clanes en guerra. Entrá a la beta.",
+      "meta": "Bogato: juego de mundo abierto en Unreal Engine con dragones y sus entrenadores. Sumate a la beta en nuestro Discord.",
+      "badges": [
+        "Mundo abierto",
+        "Unreal Engine",
+        "En desarrollo",
+        "Beta en Discord"
+      ],
+      "icono": "src/BogatoLogo.png",
+      "og_image": "src/BogatoLogo.png",
+      "genero": "Mundo abierto",
+      "descripcion": [
+        "Bogato es un juego de mundo abierto ambientado en la actualidad. Hay enfrentamientos entre dragones y sus entrenadores, de forma amistosa o no tanto, y dos mapas para explorar: la ciudad y \"La Secta\".",
+        "Estamos preparando la beta: armamos un sistema de benchmark con datos de los testers para que el juego corra bien en la mayor cantidad de equipos posible."
+      ],
+      "secciones": [
+        {
+          "titulo": "La historia, sin spoilers",
+          "parrafos": [
+            "Una noche cualquiera, una fiesta en un ático. Leo es el alma de la fiesta; Marcos, su amigo de siempre, está un paso por detrás. Posan juntos para una selfie y el flash nunca termina de apagarse.",
+            "Cuando abren los ojos ya no están en la Tierra. Cayeron en Bogato, un mundo bajo un cielo violeta, con bosques de árboles de mármol, montañas de obsidiana y océanos de vapor. Leo despierta con un fuego naranja corriéndole por las venas que no sabe controlar, y su única guía es Kasumi, una joven maga que parece conocer las reglas de este lugar.",
+            "Pero Bogato no recibe igual a todos, y la amistad que los trajo hasta acá va a ser puesta a prueba."
+          ]
+        },
+        {
+          "titulo": "Qué vas a encontrar",
+          "lista": [
+            "Un mundo abierto con dragones que crecen junto a quienes los entrenan",
+            "Duelos entre dragones y entrenadores, amistosos o no tanto",
+            "Dos mapas explorables: la ciudad y \"La Secta\"",
+            "Magia, clanes y un conflicto que viene de mucho antes de que llegues"
+          ]
+        }
+      ],
+      "ctas": [
+        {
+          "texto": "Sumate a la beta en Discord",
+          "url": "https://discord.gg/WAVmpsfwn9",
+          "estilo": "primary"
+        },
+        {
+          "texto": "Seguirlo en Game Jolt",
+          "url": "https://gamejolt.com/games/Bogato/439265",
+          "estilo": "outline"
+        }
+      ],
+      "nota_cta": "Para anotarte como tester, entrá a nuestro Discord y escribinos."
+    },
+    {
+      "slug": "found-footage",
+      "titulo": "Found Footage",
+      "tagline": "Una planta nuclear abandonada. Anomalías. Y nadie sabe qué hay adentro.",
+      "meta": "Found Footage: investigá una planta nuclear abandonada en busca de anomalías. Nadie sabe qué criaturas habitan esa zona radioactiva. En desarrollo por HK Entertainment.",
+      "badges": [
+        "Investigación",
+        "En desarrollo"
+      ],
+      "icono": "src/Logo HK c_hamster.png",
+      "og_image": "src/Logo HK c_hamster.png",
+      "genero": "Investigación",
+      "descripcion": [
+        "Investigá una planta nuclear abandonada en busca de anomalías. Nadie sabe bien qué criaturas podrían habitar esa zona radioactiva.",
+        "Found Footage está en desarrollo. Todavía hay poco para mostrar, pero vamos a ir compartiendo novedades."
+      ],
+      "ctas": [
+        {
+          "texto": "Seguir las novedades en Discord",
+          "url": "https://discord.gg/WAVmpsfwn9",
+          "estilo": "primary"
+        }
+      ]
+    }
+  ]
+}
