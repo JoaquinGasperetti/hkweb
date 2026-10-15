@@ -402,34 +402,18 @@
               <fieldset class="proposal-fieldset">
                 <legend class="proposal-legend">3. Presupuesto estimado</legend>
                 <div class="proposal-field">
-                  <label><span>Rango de inversión estimada<span class="proposal-req">*</span></span></label>
-                  <input type="hidden" id="propPresupuestoRango" name="presupuesto_rango" value="USD 1.500 – USD 5.000 (Juego indie / Mobile)">
-                  <div class="budget-pills" role="group" aria-label="Rango de presupuesto estimado">
-                    <button type="button" class="budget-pill" data-budget="Menos de USD 1.500 (Prototipo / MVP casual)" aria-pressed="false">
-                      <strong>Hasta USD 1.500</strong>
-                      <span>Prototipo / MVP o minijuego</span>
-                    </button>
-                    <button type="button" class="budget-pill is-selected" data-budget="USD 1.500 – USD 5.000 (Juego indie / Mobile)" aria-pressed="true">
-                      <strong>USD 1.500 – 5.000</strong>
-                      <span>Juego mobile o indie acotado</span>
-                    </button>
-                    <button type="button" class="budget-pill" data-budget="USD 5.000 – USD 15.000 (Proyecto mediano PC / 3D)" aria-pressed="false">
-                      <strong>USD 5.000 – 15.000</strong>
-                      <span>Producción mediana / 3D</span>
-                    </button>
-                    <button type="button" class="budget-pill" data-budget="Más de USD 15.000 (Producción completa)" aria-pressed="false">
-                      <strong>+ USD 15.000</strong>
-                      <span>Desarrollo integral a medida</span>
-                    </button>
-                  </div>
+                  <label for="propPresupuesto">
+                    <span>Cantidad de presupuesto disponible (en USD o ARS)<span class="proposal-req">*</span></span>
+                  </label>
+                  <input type="text" id="propPresupuesto" name="presupuesto" placeholder="Ej: USD 3.500 / ARS 4.000.000" required>
                 </div>
 
                 <div class="proposal-field">
                   <label for="propPresupuestoDetalle">
-                    <span>Monto aproximado (en USD o ARS), plazos o comentarios</span>
+                    <span>Plazos estimados o aclaraciones sobre el presupuesto</span>
                     <span class="proposal-opt">Opcional</span>
                   </label>
-                  <input type="text" id="propPresupuestoDetalle" name="presupuesto_detalle" placeholder="Ej: Contamos con USD 2.500 (o equivalente en ARS) y buscamos tener una primera versión en 3 meses">
+                  <input type="text" id="propPresupuestoDetalle" name="presupuesto_detalle" placeholder="Ej: Pago por etapas / Buscamos tener una primera versión en 3 meses">
                 </div>
               </fieldset>
 

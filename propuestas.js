@@ -19,23 +19,8 @@
       FORMSPREE_ENDPOINT = customEndpoint;
     }
 
-    // Selección de chips de presupuesto
-    var budgetButtons = form.querySelectorAll(".budget-pill");
-    var budgetInput = document.getElementById("propPresupuestoRango");
-
-    budgetButtons.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        budgetButtons.forEach(function (b) {
-          b.classList.remove("is-selected");
-          b.setAttribute("aria-pressed", "false");
-        });
-        btn.classList.add("is-selected");
-        btn.setAttribute("aria-pressed", "true");
-        if (budgetInput) {
-          budgetInput.value = btn.getAttribute("data-budget") || "";
-        }
-      });
-    });
+    // Campo de presupuesto directo
+    var budgetInput = document.getElementById("propPresupuesto");
 
     // Contador de caracteres de la idea
     var ideaTextarea = document.getElementById("propIdea");
@@ -68,8 +53,8 @@
         "- Link de referencia / GDD / Demo: " + (datos.link || "No incluido"),
         "",
         "3. PRESUPUESTO Y ALCANCE",
-        "- Rango estimado: " + datos.presupuesto_rango,
-        "- Detalle de presupuesto / plazos: " + (datos.presupuesto_detalle || "A conversar"),
+        "- Presupuesto indicado: " + datos.presupuesto,
+        "- Plazos / aclaraciones: " + (datos.presupuesto_detalle || "No especificado"),
         "",
         "4. DESCRIPCIÓN DE LA IDEA",
         datos.idea
@@ -200,19 +185,18 @@
         estado: document.getElementById("propEstado").value || "Idea inicial",
         idea: (document.getElementById("propIdea").value || "").trim(),
         link: (document.getElementById("propLink").value || "").trim(),
-        presupuesto_rango:
-          (budgetInput && budgetInput.value) || "A cotizar / Conversar",
+        presupuesto: ((budgetInput && budgetInput.value) || "").trim(),
         presupuesto_detalle: (
           document.getElementById("propPresupuestoDetalle").value || ""
         ).trim()
       };
 
-      if (!datos.nombre || !datos.email || !datos.titulo || !datos.idea) {
+      if (!datos.nombre || !datos.email || !datos.titulo || !datos.idea || !datos.presupuesto) {
         if (feedbackBox) {
           feedbackBox.classList.add("proposal-feedback--error");
           feedbackBox.hidden = false;
           feedbackBox.innerHTML =
-            "<h4>Faltan datos obligatorios</h4><p>Por favor completá tu nombre, correo electrónico, título tentativo y la descripción de la idea.</p>";
+            "<h4>Faltan datos obligatorios</h4><p>Por favor completá tu nombre, correo electrónico, título tentativo, la descripción de la idea y la cantidad de presupuesto.</p>";
         }
         return;
       }
@@ -236,7 +220,7 @@
             titulo_proyecto: datos.titulo,
             plataforma: datos.plataforma,
             estado_actual: datos.estado,
-            presupuesto_rango: datos.presupuesto_rango,
+            presupuesto: datos.presupuesto,
             presupuesto_detalle: datos.presupuesto_detalle,
             link_referencia: datos.link,
             idea: datos.idea
