@@ -1,0 +1,389 @@
+/* -------------------------------------------
+   HK Entertainment – Sección y Página de Propuestas (propuestas.css)
+   Usa las variables globales definidas en styles.css
+------------------------------------------- */
+
+.section--proposals {
+  position: relative;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(255, 63, 127, 0.10), transparent 45%),
+    radial-gradient(circle at 10% 90%, rgba(56, 230, 223, 0.08), transparent 45%),
+    var(--ink-soft);
+  border-top: 1px solid var(--line);
+}
+
+.proposal-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 14px;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(56, 230, 223, 0.3);
+  background: rgba(56, 230, 223, 0.08);
+  color: var(--cyan);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.proposal-layout {
+  display: grid;
+  grid-template-columns: 0.92fr 1.28fr;
+  gap: 36px;
+  align-items: start;
+}
+
+/* Columna informativa izquierda */
+.proposal-info {
+  display: grid;
+  gap: 20px;
+}
+
+.proposal-panel {
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
+.proposal-panel h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--text);
+  margin: 0 0 16px;
+}
+
+.proposal-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.proposal-steps li {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 14px;
+  align-items: start;
+}
+
+.proposal-step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: linear-gradient(120deg, var(--pink), var(--violet));
+  color: #100f18;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.proposal-steps strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.proposal-steps p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+.proposal-scopes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.proposal-scope-tag {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--panel-alt);
+  border: 1px solid var(--line);
+  color: var(--amber);
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.proposal-note-box {
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+  background: rgba(124, 77, 255, 0.08);
+  border: 1px solid rgba(124, 77, 255, 0.28);
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.proposal-note-box strong {
+  color: var(--text);
+}
+
+/* Tarjeta del formulario */
+.proposal-card {
+  padding: 36px;
+  border-radius: var(--radius-lg);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: 0 28px 60px -32px rgba(0, 0, 0, 0.65);
+}
+
+.proposal-form {
+  display: grid;
+  gap: 22px;
+}
+
+.proposal-fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.proposal-fieldset + .proposal-fieldset {
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.proposal-legend {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--cyan);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.proposal-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.proposal-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.proposal-field label {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proposal-opt {
+  font-family: var(--font-body);
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--text-dim);
+}
+
+.proposal-req {
+  color: var(--pink);
+  margin-left: 3px;
+}
+
+.proposal-field input,
+.proposal-field select,
+.proposal-field textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  box-sizing: border-box;
+}
+
+.proposal-field textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.55;
+}
+
+.proposal-field input::placeholder,
+.proposal-field textarea::placeholder {
+  color: rgba(162, 157, 187, 0.55);
+}
+
+.proposal-field input:focus,
+.proposal-field select:focus,
+.proposal-field textarea:focus {
+  outline: none;
+  border-color: var(--cyan);
+  box-shadow: 0 0 0 3px rgba(56, 230, 223, 0.14);
+  background: var(--ink-soft);
+}
+
+/* Chips de selección de presupuesto */
+.budget-pills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  gap: 10px;
+}
+
+.budget-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--ink);
+  color: var(--text);
+  font-family: var(--font-body);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.16s ease, background 0.16s ease, transform 0.12s ease;
+}
+
+.budget-pill:hover {
+  border-color: rgba(56, 230, 223, 0.45);
+  background: var(--panel-alt);
+}
+
+.budget-pill.is-selected {
+  border-color: var(--pink);
+  background: rgba(255, 63, 127, 0.12);
+  box-shadow: 0 0 0 1px var(--pink);
+}
+
+.budget-pill strong {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.budget-pill span {
+  font-size: 0.76rem;
+  color: var(--text-dim);
+}
+
+.proposal-char-count {
+  font-size: 0.76rem;
+  color: var(--text-dim);
+  text-align: right;
+  margin-top: -2px;
+}
+
+.proposal-submit-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 8px;
+}
+
+.proposal-privacy {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  margin: 0;
+  max-width: 38ch;
+}
+
+.proposal-submit-btn {
+  cursor: pointer;
+  min-width: 220px;
+}
+
+.proposal-submit-btn[disabled] {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+/* Estado de confirmación / feedback */
+.proposal-feedback {
+  margin-top: 18px;
+  padding: 24px;
+  border-radius: var(--radius-md);
+  background: var(--ink);
+  border: 1px solid var(--cyan);
+}
+
+.proposal-feedback--error {
+  border-color: var(--pink);
+}
+
+.proposal-feedback h4 {
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  color: var(--cyan);
+  margin: 0 0 8px;
+}
+
+.proposal-feedback--error h4 {
+  color: var(--pink);
+}
+
+.proposal-feedback p {
+  margin: 0 0 16px;
+  font-size: 0.92rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+.proposal-feedback-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.proposal-summary-pre {
+  margin: 14px 0 0;
+  padding: 14px;
+  border-radius: 10px;
+  background: var(--panel-alt);
+  border: 1px solid var(--line);
+  color: var(--text);
+  font-family: monospace;
+  font-size: 0.82rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+@media (max-width: 860px) {
+  .proposal-layout {
+    grid-template-columns: 1fr;
+  }
+  .proposal-card {
+    padding: 24px 20px;
+  }
+  .proposal-row {
+    grid-template-columns: 1fr;
+  }
+  .proposal-submit-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .proposal-submit-btn {
+    width: 100%;
+  }
+}

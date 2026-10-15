@@ -1,368 +1,550 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HK Entertainment — Estudio indie de videojuegos</title>
-<meta name="description" content="HK Entertainment: estudio indie de videojuegos. Del fútbol al cyberpunk, pasando por un mono biomecánico y una mina de bitcoin.">
-<link rel="canonical" href="https://hkentertainment.com.ar/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="HK Entertainment">
-<meta property="og:locale" content="es_AR">
-<meta property="og:title" content="HK Entertainment — Estudio indie de videojuegos">
-<meta property="og:description" content="Estudio indie de videojuegos de Argentina. Del fútbol al cyberpunk, pasando por un mono biomecánico y una mina de bitcoin.">
-<meta property="og:url" content="https://hkentertainment.com.ar/">
-<meta property="og:image" content="https://hkentertainment.com.ar/src/cybersimian.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="src/Logo HK c_hamster.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="juegos-web.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HK Entertainment – Estudio indie de videojuegos</title>
+  <meta name="description" content="HK Entertainment: estudio indie de videojuegos. Del fútbol al cyberpunk, pasando por el misterio. Explorá nuestros juegos en desarrollo y probá las demos web.">
+  <link rel="canonical" href="https://hkentertainment.com.ar/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HK Entertainment">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:title" content="HK Entertainment – Estudio indie de videojuegos">
+  <meta property="og:description" content="Estudio indie de videojuegos de Argentina. Del fútbol al cyberpunk, pasando por el misterio. Explorá nuestros juegos y probá demos web.">
+  <meta property="og:url" content="https://hkentertainment.com.ar/">
+  <meta property="og:image" content="https://hkentertainment.com.ar/src/cybersimian.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="src/Logo HK c_hamster.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="juegos-web.css">
+  <link rel="stylesheet" href="propuestas.css">
 </head>
 <body>
 
-<a class="skip-link" href="#inicio-contenido">Saltar al contenido</a>
+  <a class="skip-link" href="#inicio-contenido">Saltar al contenido</a>
 
-<header class="site-header" id="top">
-  <div class="wrap header-inner">
-    <a class="logo" href="#inicio" aria-label="HK Entertainment — inicio">
-      <img class="logo-mark" src="src/Logo HK c_hamster.png" alt="" width="38" height="38">
-      <span class="logo-text">HK Entertainment</span>
-    </a>
+  <header class="site-header" id="top">
+    <div class="wrap header-inner">
+      <a class="logo" href="#inicio" aria-label="HK Entertainment – inicio">
+        <img class="logo-mark" src="src/Logo HK c_hamster.png" alt="" width="38" height="38">
+        <span class="logo-text">HK Entertainment</span>
+      </a>
 
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menú de navegación">
-      <span></span><span></span><span></span>
-    </button>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
 
-    <nav class="primary-nav" id="primaryNav">
-      <a href="#inicio">Inicio</a>
-      <a href="#juegos">Juegos</a>
-      <a href="#jugar" data-jugar-link hidden>Jugar</a>
-      <a href="#equipo">Equipo</a>
-      <a href="#contacto">Contacto</a>
-      <a class="nav-cta" href="https://play.google.com/store/apps/dev?id=6928241970397486127" target="_blank" rel="noopener">Google Play</a>
-    </nav>
-  </div>
-</header>
-
-<main id="inicio-contenido">
-
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <div class="hero-bg" aria-hidden="true">
-      <svg class="hero-hexes" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
-        <polygon class="hex hex-a" points="120,40 170,68 170,124 120,152 70,124 70,68"/>
-        <polygon class="hex hex-b" points="1080,120 1140,154 1140,222 1080,256 1020,222 1020,154"/>
-        <polygon class="hex hex-c" points="980,600 1030,628 1030,684 980,712 930,684 930,628"/>
-        <polygon class="hex hex-d" points="180,660 220,682 220,726 180,748 140,726 140,682"/>
-      </svg>
+      <nav class="primary-nav" id="primaryNav">
+        <a href="#inicio">Inicio</a>
+        <a href="#juegos">Juegos</a>
+        <a href="#jugar" data-jugar-link hidden>Jugar</a>
+        <a href="#propuestas">Propuestas</a>
+        <a href="#equipo">Equipo</a>
+        <a href="#contacto">Contacto</a>
+        <a class="nav-cta" href="https://play.google.com/store/apps/dev?id=6928241970397486127" target="_blank" rel="noopener">Google Play</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="wrap hero-inner">
-      <p class="hero-kicker">Estudio indie de videojuegos — Argentina</p>
-      <h1 class="hero-title">
-        Fútbol, cowboys, un mono biomecánico y una mina de bitcoin.
-      </h1>
-      <p class="hero-sub">
-        Somos HK Entertainment, un equipo chico armando juegos para Android y proyectos propios en Unreal Engine y Unity. Nos gusta mezclar géneros que no deberían llevarse bien entre sí, y hacer que funcionen.
-      </p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#juegos">Ver nuestros juegos</a>
-        <a class="btn btn-ghost" href="https://hkentertainment.itch.io/" target="_blank" rel="noopener">Nuestro itch.io</a>
+  <main id="inicio-contenido">
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true">
+        <svg class="hero-hexes" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+          <polygon class="hex hex-a" points="120,40 170,68 170,124 120,152 70,124 70,68"/>
+          <polygon class="hex hex-b" points="1080,120 1140,154 1140,222 1080,256 1020,222 1020,154"/>
+          <polygon class="hex hex-c" points="980,600 1030,628 1030,684 980,712 930,684 930,628"/>
+          <polygon class="hex hex-d" points="180,660 220,682 220,726 180,748 140,726 140,682"/>
+        </svg>
       </div>
 
-      <dl class="hero-stats">
-        <div><dt>10</dt><dd>juegos en Google Play</dd></div>
-        <div><dt>1</dt><dd>demo técnica en itch.io</dd></div>
-        <div><dt>4</dt><dd>personas en el equipo</dd></div>
-        <div><dt>2</dt><dd>motores: Unity y Unreal Engine</dd></div>
-      </dl>
-    </div>
-  </section>
+      <div class="wrap hero-inner">
+        <p class="hero-kicker">Estudio indie de videojuegos – Argentina</p>
+        <h1 class="hero-title">
+          Fútbol, cowboys, un mono biomecánico y una mina de bitcoin.
+        </h1>
+        <p class="hero-sub">
+          Somos HK Entertainment, un equipo chico armando juegos para Android y proyectos propios en Unreal Engine y Unity.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#juegos">Ver nuestros juegos</a>
+          <a class="btn btn-outline" href="#propuestas">Enviar una propuesta</a>
+          <a class="btn btn-ghost" href="https://hkentertainment.itch.io/" target="_blank" rel="noopener">Nuestro itch.io</a>
+        </div>
 
-  <!-- JUEGOS -->
-  <section class="section" id="juegos">
-    <div class="wrap">
-
-      <div class="section-head">
-        <h2>Nuestros juegos</h2>
-        <p>Un par de proyectos ambiciosos y un catálogo bien variado de juegos para Android.</p>
+        <dl class="hero-stats">
+          <div><dt>10+</dt><dd>juegos en Google Play</dd></div>
+          <div><dt>1</dt><dd>demo técnica en itch.io</dd></div>
+          <div><dt>4</dt><dd>personas en el equipo</dd></div>
+          <div><dt>2</dt><dd>motores: Unity y Unreal Engine</dd></div>
+        </dl>
       </div>
+    </section>
 
-      <!-- Destacados -->
-      <div class="featured-grid">
+    <!-- JUEGOS -->
+    <section class="section" id="juegos">
+      <div class="wrap">
 
-        <article class="feature-panel feature-panel--flagship" data-glitch="CYBERSIMIAN: TRIALS">
-          <video class="feature-cover" src="src/Game.mp4" poster="src/cybersimian.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Fragmento de juego de Cybersimian: Trials: M03 haciendo parkour"></video>
-          <div class="feature-panel-tag">Proyecto insignia · Unreal Engine 5</div>
-          <h3 class="glitch-title" data-text="Cybersimian: Trials">Cybersimian: Trials</h3>
-          <p>
-            M03 es un primate biomecánico que despierta sin voz dentro de una instalación experimental controlada por AR-IA, una inteligencia artificial tan filosa como sarcástica. Cybersimian: Trials es nuestro proyecto más ambicioso hasta ahora: parkour, estética cyberpunk y un humor negro que rompe la cuarta pared, con guiños a Mirror's Edge, Portal y Cyberpunk 2077.
-          </p>
-          <p class="feature-meta">Demo técnica de dos niveles de parkour, jugable ahora en itch.io.</p>
-          <div class="itch-embed">
-            <iframe frameborder="0" src="https://itch.io/embed/3628286?bg_color=1c1b27&amp;fg_color=f4f2f8&amp;link_color=38e6df&amp;border_color=ff3f7f" width="552" height="167" title="Cybersimian: Trials en itch.io" loading="lazy"><a href="https://hkentertainment.itch.io/cybersimiantrials">Cybersimian:Trials DEMO by HKentertainment</a></iframe>
-          </div>
-          <div class="feature-actions">
-            <a class="btn btn-ghost" href="catalogo/cybersimian-trials/">Ver ficha completa</a>
-          </div>
-        </article>
+        <div class="section-head">
+          <h2>Nuestros juegos</h2>
+          <p>Un par de proyectos ambiciosos y un catálogo bien variado de juegos para Android.</p>
+        </div>
 
-        <article class="feature-panel" data-glitch="CYBERCHIMPS">
-          <img class="feature-cover" src="src/cyberchimps.jpg" alt="Arte de CyberChimps" loading="lazy">
-          <div class="feature-panel-tag">Publicado · Unity · Android</div>
-          <h3 class="glitch-title" data-text="CyberChimps">CyberChimps</h3>
-          <p>
-            Un puzzle cooperativo cyberpunk para dos jugadores online. Nuestro primer gran lanzamiento en Google Play, pensado para resolverse en equipo, a distancia.
-          </p>
-          <div class="feature-actions">
-            <a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.Cyberchimps" target="_blank" rel="noopener">Ver en Google Play</a>
-            <a class="btn btn-ghost" href="catalogo/cyberchimps/">Más info</a>
-          </div>
-        </article>
+        <!-- Destacados -->
+        <div class="featured-grid">
 
-      </div>
-
-      <!-- Catálogo -->
-      <div class="catalog-head">
-        <h3>Catálogo completo en Google Play</h3>
-      </div>
-
-      <ul class="catalog-grid">
-
-        <li class="game-card">
-          <img class="game-icon" src="src/messi-simulator.png" alt="" loading="lazy">
-          <div>
-            <h4>Messi Simulator</h4>
-            <p class="game-genre">Fútbol arcade · +10 mil descargas</p>
-            <p>Subí de nivel a tu crack y llevalo a la cima del fútbol mundial.</p>
-            <div class="game-links">
-              <a href="catalogo/messi-simulator/">Más info</a>
-              <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.MessiSimulator" target="_blank" rel="noopener">Google Play</a>
+          <article class="feature-panel feature-panel--flagship" data-glitch="CYBERSIMIAN: TRIALS">
+            <video class="feature-cover" src="src/Game.mp4" poster="src/cybersimian.jpg" autoplay muted loop playsinline></video>
+            <div class="feature-panel-tag">Proyecto insignia · Unreal Engine 5</div>
+            <h3 class="glitch-title" data-text="Cybersimian: Trials">Cybersimian: Trials</h3>
+            <p>
+              M03 es un primate biomecánico que despierta sin voz dentro de una instalación experimental controlada por una IA.
+            </p>
+            <p class="feature-meta">Demo técnica de dos niveles de parkour, jugable ahora en itch.io.</p>
+            <div class="itch-embed">
+              <iframe frameborder="0" src="https://itch.io/embed/3628286?bg_color=1c1b27&amp;fg_color=f4f2f8&amp;link_color=8950d6&amp;border_color=322749" width="552" height="167"><a href="https://hkentertainment.itch.io/cybersimian-trials">Cybersimian: Trials by HK Entertainment</a></iframe>
             </div>
-          </div>
-        </li>
-
-        <li class="game-card">
-          <img class="game-icon" src="src/heroes-ebrios.png" alt="" loading="lazy">
-          <div>
-            <h4>Héroes Ebrios</h4>
-            <p class="game-genre">Juego de fiesta</p>
-            <p>Un juego de beber pensado para partidas entre amigos, con mucho humor de por medio.</p>
-            <div class="game-links">
-              <a href="catalogo/heroes-ebrios/">Más info</a>
-              <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.heroesebrios" target="_blank" rel="noopener">Google Play</a>
+            <div class="feature-actions">
+              <a class="btn btn-ghost" href="catalogo/cybersimian-trials/">Ver ficha completa</a>
             </div>
-          </div>
-        </li>
+          </article>
 
-        <li class="game-card">
-          <img class="game-icon" src="src/reto-7d.png" alt="" loading="lazy">
-          <div>
-            <h4>Reto 7D</h4>
-            <p class="game-genre">Autoconocimiento</p>
-            <p>Un desafío de siete días pensado para trabajar el autoconocimiento paso a paso.</p>
-            <div class="game-links">
-              <a href="catalogo/reto-7d/">Más info</a>
-              <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.retocoach" target="_blank" rel="noopener">Google Play</a>
+          <article class="feature-panel" data-glitch="CYBERCHIMPS">
+            <img class="feature-cover" src="src/cyberchimps.jpg" alt="Arte de CyberChimps" loading="lazy">
+            <div class="feature-panel-tag">Publicado · Unity · Android</div>
+            <h3 class="glitch-title" data-text="CyberChimps">CyberChimps</h3>
+            <p>
+              Un puzzle cooperativo cyberpunk para dos jugadores online. Nuestro primer gran lanzamiento en Google Play.
+            </p>
+            <div class="feature-actions">
+              <a class="btn btn-outline" href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.CyberChimps" target="_blank" rel="noopener">Google Play</a>
+              <a class="btn btn-ghost" href="catalogo/cyberchimps/">Más info</a>
             </div>
-          </div>
-        </li>
+          </article>
 
-        <li class="game-card">
-          <img class="game-icon" src="src/grass-cutter.png" alt="" loading="lazy">
-          <div>
-            <h4>Grass Cutter 3D</h4>
-            <p class="game-genre">Simulador · Mow Tycoon</p>
-            <p>Un simulador relajante de corte de césped con progresión estilo tycoon.</p>
-            <div class="game-links">
-              <a href="catalogo/grass-cutter-3d/">Más info</a>
-              <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.Pasto" target="_blank" rel="noopener">Google Play</a>
-            </div>
-          </div>
-        </li>
+        </div>
 
-        <li class="game-card">
-          <img class="game-icon" src="src/cowboy-idle.png" alt="" loading="lazy">
-          <div>
-            <h4>Cowboy Idle Frontier</h4>
-            <p class="game-genre">Idle · Western</p>
-            <p>Construí tu imperio del viejo oeste a tu propio ritmo, en modo idle.</p>
-            <div class="game-links">
-              <a href="catalogo/cowboy-idle-frontier/">Más info</a>
-              <a href="https://play.google.com/store/apps/details?id=com.HKEntertainment.CowboyIdleFrontier" target="_blank" rel="noopener">Google Play</a>
-            </div>
-          </div>
-        </li>
-
-        <li class="game-card">
-          <img class="game-icon" src="src/tortugo.png" alt="" loading="lazy">
-          <div>
-            <h4>TortuGO</h4>
-            <p class="game-genre">Carreras casuales</p>
-            <p>Carreras de tortugas tan simples como adictivas.</p>
-            <div class="game-links">
-              <a href="catalogo/tortugo/">Más info</a>
-              <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.TortuGO" target="_blank" rel="noopener">Google Play</a>
-            </div>
-          </div>
-        </li>
-
-      </ul>
-
-      <!-- Próximamente -->
-      <div class="upcoming">
+        <!-- Catálogo -->
         <div class="catalog-head">
-          <h3>Próximamente</h3>
+          <h3>Catálogo completo en Google Play</h3>
         </div>
-        <div class="upcoming-grid">
-          <article class="upcoming-card">
-            <h4><img class="upcoming-logo" src="src/BogatoLogo.png" width="312" height="96" alt="Bogato" loading="lazy"></h4>
-            <p>
-              Un juego de mundo abierto ambientado en la actualidad: enfrentamientos con dragones y sus entrenadores, de forma amistosa o no tanto, en dos mapas explorables: la ciudad y "La Secta". Estamos armando un sistema de benchmark con datos de beta testers para definir los requisitos recomendados de hardware.
-            </p>
-            <p class="upcoming-status">En desarrollo — Unreal Engine</p>
-            <div class="upcoming-actions">
-              <a class="btn btn-primary" href="https://discord.gg/WAVmpsfwn9" target="_blank" rel="noopener">Sumate a la beta en Discord</a>
-              <a href="catalogo/bogato/">Más info</a>
+
+        <ul class="catalog-grid">
+
+          <li class="game-card">
+            <img class="game-icon" src="src/messi-simulator.png" alt="" loading="lazy">
+            <div>
+              <h4>Messi Simulator</h4>
+              <p class="game-genre">Fútbol arcade · +10 mil descargas</p>
+              <p>Subi de nivel a tu crack y llevalo a la cima del fútbol mundial.</p>
+              <div class="game-links">
+                <a href="catalogo/messi-simulator/">Más info</a>
+                <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.MessiSimulator" target="_blank" rel="noopener">Google Play</a>
+              </div>
             </div>
-          </article>
-          <article class="upcoming-card">
-            <h4>Found Footage</h4>
-            <p>
-              Investigá una planta nuclear abandonada en busca de anomalías. Nadie sabe bien qué criaturas podrían habitar esa zona radioactiva.
-            </p>
-            <p class="upcoming-status">En desarrollo</p>
-            <div class="upcoming-actions">
-              <a href="catalogo/found-footage/">Más info</a>
+          </li>
+
+          <li class="game-card">
+            <img class="game-icon" src="src/heroes-ebrios.png" alt="" loading="lazy">
+            <div>
+              <h4>Héroes Ebrios</h4>
+              <p class="game-genre">Juego de fiesta</p>
+              <p>Un juego de beber pensado para partidas entre amigos, con mucho humor de por medio.</p>
+              <div class="game-links">
+                <a href="catalogo/heroes-ebrios/">Más info</a>
+                <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.heroesebrios" target="_blank" rel="noopener">Google Play</a>
+              </div>
             </div>
-          </article>
+          </li>
+
+          <li class="game-card">
+            <img class="game-icon" src="src/reto-7d.png" alt="" loading="lazy">
+            <div>
+              <h4>Reto 7D</h4>
+              <p class="game-genre">Autoconocimiento</p>
+              <p>Un desafio de siete dias pensado para trabajar el autoconocimiento paso a paso.</p>
+              <div class="game-links">
+                <a href="catalogo/reto-7d/">Más info</a>
+                <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.retocoach" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="game-card">
+            <img class="game-icon" src="src/grass-cutter.png" alt="" loading="lazy">
+            <div>
+              <h4>Grass Cutter 3D</h4>
+              <p class="game-genre">Simulador · Mow Tycoon</p>
+              <p>Un simulador relajante de corte de césped con progresión estilo tycoon.</p>
+              <div class="game-links">
+                <a href="catalogo/grass-cutter-3d/">Más info</a>
+                <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.Pasto" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="game-card">
+            <img class="game-icon" src="src/cowboy-idle.png" alt="" loading="lazy">
+            <div>
+              <h4>Cowboy Idle Frontier</h4>
+              <p class="game-genre">Idle · Western</p>
+              <p>Construi tu imperio del viejo oeste a tu propio ritmo, en modo idle.</p>
+              <div class="game-links">
+                <a href="catalogo/cowboy-idle-frontier/">Más info</a>
+                <a href="https://play.google.com/store/apps/details?id=com.HKentertainment.CowboyIdleFrontier" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="game-card">
+            <img class="game-icon" src="src/tortugo.png" alt="" loading="lazy">
+            <div>
+              <h4>TortuGO</h4>
+              <p class="game-genre">Carreras casuales</p>
+              <p>Carreras de tortugas tan simples como adictivas.</p>
+              <div class="game-links">
+                <a href="catalogo/tortugo/">Más info</a>
+                <a href="https://play.google.com/store/apps/details?id=com.HKemtrentainment.TortuGO" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <!-- Próximamente -->
+        <div class="upcoming">
+          <div class="catalog-head">
+            <h3>Próximamente</h3>
+          </div>
+          <div class="upcoming-grid">
+            <article class="upcoming-card">
+              <h4><img class="upcoming-logo" src="src/BogatoLogo.png" width="312" height="96" alt="Bogato" loading="lazy"></h4>
+              <p>
+                Un juego de mundo abierto ambientado en la actualidad: enfrentamientos con dragones y sus entrenadores.
+              </p>
+              <p class="upcoming-status">En desarrollo – Unreal Engine</p>
+              <div class="upcoming-actions">
+                <a class="btn btn-primary" href="https://discord.gg/WAVmpsfwn9" target="_blank" rel="noopener">Sumate</a>
+                <a href="catalogo/bogato/">Más info</a>
+              </div>
+            </article>
+            <article class="upcoming-card">
+              <h4>Found Footage</h4>
+              <p>
+                Investigá una planta nuclear abandonada en busca de anomalías. Nadie sabe bien qué criaturas podrían estar esperándote.
+              </p>
+              <p class="upcoming-status">En desarrollo</p>
+              <div class="upcoming-actions">
+                <a href="catalogo/found-footage/">Más info</a>
+              </div>
+            </article>
+          </div>
+
         </div>
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- JUGAR EN EL NAVEGADOR -->
+    <section class="section section--alt" id="jugar" hidden>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Jugá en el navegador</h2>
+          <p>Juegos de nuestro equipo que se juegan directamente acá, sin descargar nada.</p>
+        </div>
 
-  <!-- JUGAR EN EL NAVEGADOR -->
-  <section class="section section--alt" id="jugar" hidden>
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Jugá en el navegador</h2>
-        <p>Juegos de nuestro equipo que se juegan directamente acá, sin descargar nada.</p>
+        <div class="play-tabs" id="playTabs" role="tablist" aria-label="Juegos disponibles en el navegador"></div>
+
+        <div class="play-stage" id="playStage" role="tabpanel">
+          <div class="play-viewport" id="playViewport"></div>
+          <div class="play-info" id="playInfo"></div>
+        </div>
+
+        <noscript><p>Para jugar desde la página necesitás activar JavaScript.</p></noscript>
       </div>
+    </section>
 
-      <div class="play-tabs" id="playTabs" role="tablist" aria-label="Juegos disponibles en el navegador"></div>
+    <!-- PROPUESTAS DE VIDEOJUEGOS -->
+    <section class="section section--proposals" id="propuestas">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="proposal-kicker">Desarrollá tu juego con HK</span>
+          <h2>Envianos tu propuesta</h2>
+          <p>¿Tenés una idea para un videojuego, buscás un estudio que la desarrolle o querés co-producir un proyecto? Contanos de qué se trata, tu presupuesto estimado y cómo contactarte; si lo vemos factible, te escribimos.</p>
+        </div>
 
-      <div class="play-stage" id="playStage" role="tabpanel">
-        <div class="play-viewport" id="playViewport"></div>
-        <div class="play-info" id="playInfo"></div>
+        <div class="proposal-layout">
+          <!-- Información lateral -->
+          <aside class="proposal-info">
+            <div class="proposal-panel">
+              <h3>¿Cómo evaluamos las propuestas?</h3>
+              <ol class="proposal-steps">
+                <li>
+                  <span class="proposal-step-num">1</span>
+                  <div>
+                    <strong>Mandanos tu idea y alcance</strong>
+                    <p>Completá el formulario con el concepto del juego, referencias, presupuesto estimado y tus datos de contacto.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="proposal-step-num">2</span>
+                  <div>
+                    <strong>Análisis de factibilidad</strong>
+                    <p>Revisamos el alcance técnico, tiempos y presupuesto junto a nuestras áreas de programación, arte, audio y finanzas.</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="proposal-step-num">3</span>
+                  <div>
+                    <strong>Nos ponemos en contacto</strong>
+                    <p>Si vemos que el proyecto es viable para el estudio, te escribimos para coordinar una llamada y definir una propuesta de trabajo.</p>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="proposal-panel">
+              <h3>Qué podemos desarrollar</h3>
+              <p style="margin: 0; color: var(--text-dim); font-size: 0.92rem;">Trabajamos de punta a punta desde el prototipo hasta la publicación en tiendas:</p>
+              <div class="proposal-scopes">
+                <span class="proposal-scope-tag">Android / Google Play</span>
+                <span class="proposal-scope-tag">PC / Steam / itch.io</span>
+                <span class="proposal-scope-tag">Juegos Web / WebGL</span>
+                <span class="proposal-scope-tag">Unity</span>
+                <span class="proposal-scope-tag">Unreal Engine 5</span>
+                <span class="proposal-scope-tag">Prototipos / MVPs</span>
+                <span class="proposal-scope-tag">Advergaming / Marcas</span>
+              </div>
+            </div>
+
+            <div class="proposal-note-box">
+              <strong>Confidencialidad y respuesta:</strong> Toda idea que nos compartas se revisa únicamente de forma interna dentro de HK Entertainment. Si el proyecto encaja con nuestra disponibilidad y línea técnica, nos comunicaremos directamente con vos.
+            </div>
+          </aside>
+
+          <!-- Formulario de propuestas -->
+          <div class="proposal-card">
+            <form class="proposal-form" id="formPropuesta" data-formspree="" novalidate>
+
+              <!-- 1. Datos de contacto -->
+              <fieldset class="proposal-fieldset">
+                <legend class="proposal-legend">1. Tus datos de contacto</legend>
+                <div class="proposal-row">
+                  <div class="proposal-field">
+                    <label for="propNombre"><span>Nombre o Estudio<span class="proposal-req">*</span></span></label>
+                    <input type="text" id="propNombre" name="nombre" placeholder="Ej: Juan Pérez / Estudio Sur" required autocomplete="name">
+                  </div>
+                  <div class="proposal-field">
+                    <label for="propEmail"><span>Correo electrónico<span class="proposal-req">*</span></span></label>
+                    <input type="email" id="propEmail" name="email" placeholder="tu@email.com" required autocomplete="email">
+                  </div>
+                </div>
+
+                <div class="proposal-field">
+                  <label for="propContactoAlt">
+                    <span>WhatsApp, Discord o Red Social</span>
+                    <span class="proposal-opt">Opcional</span>
+                  </label>
+                  <input type="text" id="propContactoAlt" name="contacto_alt" placeholder="Ej: +54 9 341 ... o usuario de Discord / LinkedIn">
+                </div>
+              </fieldset>
+
+              <!-- 2. Sobre la idea -->
+              <fieldset class="proposal-fieldset">
+                <legend class="proposal-legend">2. Sobre la idea del videojuego</legend>
+                <div class="proposal-field">
+                  <label for="propTitulo"><span>Nombre tentativo o concepto corto<span class="proposal-req">*</span></span></label>
+                  <input type="text" id="propTitulo" name="titulo" placeholder="Ej: Roguelike de cartas gauchesco / Juego arcade para marca" required>
+                </div>
+
+                <div class="proposal-row">
+                  <div class="proposal-field">
+                    <label for="propPlataforma"><span>Plataforma objetivo</span></label>
+                    <select id="propPlataforma" name="plataforma">
+                      <option value="Android / Mobile">Android / Mobile</option>
+                      <option value="PC (Steam / itch.io)">PC (Steam / itch.io)</option>
+                      <option value="Web / Navegador (WebGL)">Web / Navegador (WebGL)</option>
+                      <option value="Multiplataforma (PC + Mobile)">Multiplataforma (PC + Mobile)</option>
+                      <option value="A definir con el estudio">A definir con el estudio</option>
+                    </select>
+                  </div>
+
+                  <div class="proposal-field">
+                    <label for="propEstado"><span>Estado actual</span></label>
+                    <select id="propEstado" name="estado">
+                      <option value="Idea / Concepto inicial">Idea / Concepto inicial</option>
+                      <option value="GDD / Diseño documentado">GDD / Diseño documentado</option>
+                      <option value="Prototipo o avance previo">Prototipo o avance previo</option>
+                      <option value="Proyecto para marca / empresa">Proyecto para marca / empresa</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="proposal-field">
+                  <label for="propIdea"><span>Contanos tu idea<span class="proposal-req">*</span></span></label>
+                  <textarea id="propIdea" name="idea" rows="5" maxlength="2000" placeholder="Describí de qué trata el juego, cómo se juega (mecánicas principales), qué estética imaginás o qué juegos tomás como referencia..." required></textarea>
+                  <div class="proposal-char-count" id="propIdeaCount">0 / 2000 caracteres</div>
+                </div>
+
+                <div class="proposal-field">
+                  <label for="propLink">
+                    <span>Link a documento (GDD), bocetos o referencias</span>
+                    <span class="proposal-opt">Opcional</span>
+                  </label>
+                  <input type="url" id="propLink" name="link" placeholder="https://drive.google.com/... o link de referencia">
+                </div>
+              </fieldset>
+
+              <!-- 3. Presupuesto -->
+              <fieldset class="proposal-fieldset">
+                <legend class="proposal-legend">3. Presupuesto estimado</legend>
+                <div class="proposal-field">
+                  <label><span>Rango de inversión estimada<span class="proposal-req">*</span></span></label>
+                  <input type="hidden" id="propPresupuestoRango" name="presupuesto_rango" value="USD 1.500 – USD 5.000 (Juego indie / Mobile)">
+                  <div class="budget-pills" role="group" aria-label="Rango de presupuesto estimado">
+                    <button type="button" class="budget-pill" data-budget="Menos de USD 1.500 (Prototipo / MVP casual)" aria-pressed="false">
+                      <strong>Hasta USD 1.500</strong>
+                      <span>Prototipo / MVP o minijuego</span>
+                    </button>
+                    <button type="button" class="budget-pill is-selected" data-budget="USD 1.500 – USD 5.000 (Juego indie / Mobile)" aria-pressed="true">
+                      <strong>USD 1.500 – 5.000</strong>
+                      <span>Juego mobile o indie acotado</span>
+                    </button>
+                    <button type="button" class="budget-pill" data-budget="USD 5.000 – USD 15.000 (Proyecto mediano PC / 3D)" aria-pressed="false">
+                      <strong>USD 5.000 – 15.000</strong>
+                      <span>Producción mediana / 3D</span>
+                    </button>
+                    <button type="button" class="budget-pill" data-budget="Más de USD 15.000 (Producción completa)" aria-pressed="false">
+                      <strong>+ USD 15.000</strong>
+                      <span>Desarrollo integral a medida</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="proposal-field">
+                  <label for="propPresupuestoDetalle">
+                    <span>Monto aproximado (en USD o ARS), plazos o comentarios</span>
+                    <span class="proposal-opt">Opcional</span>
+                  </label>
+                  <input type="text" id="propPresupuestoDetalle" name="presupuesto_detalle" placeholder="Ej: Contamos con USD 2.500 (o equivalente en ARS) y buscamos tener una primera versión en 3 meses">
+                </div>
+              </fieldset>
+
+              <div class="proposal-submit-row">
+                <p class="proposal-privacy">Al enviarla, evaluaremos la propuesta y te responderemos por correo o WhatsApp/Discord si resulta factible.</p>
+                <button type="submit" class="btn btn-primary proposal-submit-btn" id="propSubmitBtn">Enviar propuesta</button>
+              </div>
+
+              <div class="proposal-feedback" id="propFeedback" hidden aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <noscript><p>Para jugar desde la página necesitás activar JavaScript.</p></noscript>
-    </div>
-  </section>
+    <!-- EQUIPO -->
+    <section class="section section--alt" id="equipo">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Equipo</h2>
+          <p>Somos cuatro personas repartiendo el arte, el código, el sonido y los números.</p>
+        </div>
 
-  <!-- EQUIPO -->
-  <section class="section section--alt" id="equipo">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Equipo</h2>
-        <p>Somos cuatro personas repartiendo el arte, el código, el sonido y los números.</p>
-      </div>
-
-      <ul class="team-grid">
-        <li class="team-card">
-          <h3>Joaquin Gasperetti</h3>
-          <p class="team-role">Desarrollo &amp; programación</p>
-          <p>A cargo del desarrollo técnico de los proyectos del estudio, desde las apps de Android hasta los prototipos en Unreal Engine.</p>
-          <a class="team-link" href="https://www.linkedin.com/in/joaquin-gasperetti-67b109260/" target="_blank" rel="noopener">LinkedIn</a>
-        </li>
-        <li class="team-card">
-          <h3>Francisco Morello</h3>
-          <p class="team-role">Dirección creativa &amp; arte</p>
-          <p>Director Creativo y de Arte del estudio. También forma parte del equipo de producción.</p>
-          <a class="team-link" href="https://www.linkedin.com/in/francisco-morello-2b48a3328/" target="_blank" rel="noopener">LinkedIn</a>
-        </li>
-        <li class="team-card">
-          <h3>Alan Fernández</h3>
-          <p class="team-role">Dirección de audio</p>
-          <p>A cargo de la música y el diseño sonoro de los juegos. También forma parte del equipo de producción.</p>
-          <a class="team-link" href="https://www.linkedin.com/in/alan-fernandez1993/" target="_blank" rel="noopener">LinkedIn</a>
-        </li>
-        <li class="team-card">
-          <h3>Misael Ifrain</h3>
-          <p class="team-role">Finanzas, diseño &amp; narrativa</p>
-          <p>Director Financiero (CFO), diseñador de juego, guionista y responsable de Recursos Humanos del estudio.</p>
-          <a class="team-link" href="https://www.linkedin.com/in/misael-ifrain-2b2416217/" target="_blank" rel="noopener">LinkedIn</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- QUÉ NOS DISTINGUE -->
-  <section class="section" id="valores">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Cómo laburamos</h2>
-      </div>
-      <ul class="values-grid">
-        <li>
-          <h3>Innovación</h3>
-          <p>Probamos géneros, mecánicas y motores distintos en cada proyecto en lugar de repetir la misma fórmula.</p>
-        </li>
-        <li>
-          <h3>Calidad</h3>
-          <p>Del código al arte, cuidamos el detalle antes de que un juego llegue a la tienda.</p>
-        </li>
-        <li>
-          <h3>Equipo chico</h3>
-          <p>Somos cuatro personas cubriendo todas las áreas del estudio, de punta a punta.</p>
-        </li>
-        <li>
-          <h3>Cerca de la comunidad</h3>
-          <p>Escuchamos el feedback de quienes juegan y lo usamos para mejorar lo que sigue.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- CONTACTO -->
-  <section class="section section--contact" id="contacto">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Contacto</h2>
-        <p>¿Tenés un proyecto, una propuesta o querés sumarte al equipo? Escribinos.</p>
-      </div>
-
-      <div class="contact-grid">
-        <a class="contact-email" href="mailto:contacto@hkentertainment.com.ar">contacto@hkentertainment.com.ar</a>
-
-        <ul class="social-list">
-          <li><a href="https://www.instagram.com/_hkentertainment/" target="_blank" rel="noopener">Instagram</a></li>
-          <li><a href="https://www.youtube.com/@hkentertainment8231" target="_blank" rel="noopener">YouTube</a></li>
-          <li><a href="https://x.com/EntretainmentHk" target="_blank" rel="noopener">X</a></li>
-          <li><a href="https://www.tiktok.com/@hkentertainment7?lang=es" target="_blank" rel="noopener">TikTok</a></li>
-          <li><a href="https://play.google.com/store/apps/dev?id=6928241970397486127" target="_blank" rel="noopener">Google Play</a></li>
-          <li><a href="https://hkentertainment.itch.io/" target="_blank" rel="noopener">itch.io</a></li>
-          <li><a href="https://discord.gg/WAVmpsfwn9" target="_blank" rel="noopener">Discord</a></li>
+        <ul class="team-grid">
+          <li class="team-card">
+            <h3>Joaquin Gasperetti</h3>
+            <p class="team-role">Desarrollo &amp; programación</p>
+            <p>A cargo del desarrollo técnico de los proyectos del estudio, desde las apps de Android hasta los prototipos de PC.</p>
+            <a class="team-link" href="https://www.linkedin.com/in/joaquin-gasperetti-67b109260/" target="_blank" rel="noopener">LinkedIn</a>
+          </li>
+          <li class="team-card">
+            <h3>Francisco Morello</h3>
+            <p class="team-role">Dirección creativa &amp; arte</p>
+            <p>Director Creativo y de Arte del estudio. También forma parte del equipo de producción.</p>
+            <a class="team-link" href="https://www.linkedin.com/in/francisco-morello-2b48a3328/" target="_blank" rel="noopener">LinkedIn</a>
+          </li>
+          <li class="team-card">
+            <h3>Alan Fernández</h3>
+            <p class="team-role">Dirección de audio</p>
+            <p>A cargo de la música y el diseño sonoro de los juegos. También forma parte del equipo de producción.</p>
+            <a class="team-link" href="https://www.linkedin.com/in/alan-fernandez1993/" target="_blank" rel="noopener">LinkedIn</a>
+          </li>
+          <li class="team-card">
+            <h3>Misael Ifrain</h3>
+            <p class="team-role">Finanzas, diseño &amp; narrativa</p>
+            <p>Director Financiero (CFO), diseñador de juego, guionista y responsable de Recursos Humanos del estudio.</p>
+            <a class="team-link" href="https://www.linkedin.com/in/misael-ifrain-2b2416217/" target="_blank" rel="noopener">LinkedIn</a>
+          </li>
         </ul>
       </div>
+    </section>
+
+    <!-- CÓMO LABURAMOS -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Cómo laburamos</h2>
+        </div>
+        <ul class="values-grid">
+          <li>
+            <h3>Innovación</h3>
+            <p>Probamos géneros, mecánicas y motores distintos en cada proyecto en lugar de repetir la misma fórmula.</p>
+          </li>
+          <li>
+            <h3>Calidad</h3>
+            <p>Del código al arte, cuidamos el detalle antes de que un juego llegue a la tienda.</p>
+          </li>
+          <li>
+            <h3>Equipo chico</h3>
+            <p>Somos cuatro personas cubriendo todas las áreas del estudio, de punta a punta.</p>
+          </li>
+          <li>
+            <h3>Cerca de la comunidad</h3>
+            <p>Escuchamos el feedback de quienes juegan y lo usamos para mejorar lo que sigue.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section section--contact" id="contacto">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Contacto</h2>
+          <p>¿Tenés un proyecto, una propuesta o querés sumarte al equipo? Escribinos.</p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-email" href="mailto:contacto@hkentertainment.com.ar">contacto@hkentertainment.com.ar</a>
+
+          <ul class="social-list">
+            <li><a href="https://www.instagram.com/_hkentertainment/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.youtube.com/@hkentertainment8231" target="_blank" rel="noopener">YouTube</a></li>
+            <li><a href="https://x.com/EntretainmentHk" target="_blank" rel="noopener">X</a></li>
+            <li><a href="https://www.tiktok.com/@hkentertainment7?lang=es" target="_blank" rel="noopener">TikTok</a></li>
+            <li><a href="https://play.google.com/store/apps/dev?id=6928241970397486127" target="_blank" rel="noopener">Google Play</a></li>
+            <li><a href="https://hkentertainment.itch.io/" target="_blank" rel="noopener">itch.io</a></li>
+            <li><a href="https://discord.gg/WAVmpsfwn9" target="_blank" rel="noopener">Discord</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>&copy; <span id="year"></span> HK Entertainment · <a href="mailto:contacto@hkentertainment.com.ar">contacto@hkentertainment.com.ar</a></p>
+      <a href="#top">Volver arriba</a>
     </div>
-  </section>
+  </footer>
 
-</main>
-
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <p>© <span id="year"></span> HK Entertainment · <a href="mailto:contacto@hkentertainment.com.ar">contacto@hkentertainment.com.ar</a></p>
-    <a href="#top">Volver arriba</a>
-  </div>
-</footer>
-
-<script src="script.js"></script>
-<script src="juegos-web.js" defer></script>
-<script src="video-loop.js" defer></script>
+  <script src="script.js"></script>
+  <script src="juegos-web.js" defer></script>
+  <script src="video-loop.js" defer></script>
+  <script src="propuestas.js" defer></script>
 </body>
 </html>

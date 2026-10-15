@@ -86,31 +86,31 @@ def hero(j):
 
     clase_grid = "gp-hero-grid" if media else "gp-hero-grid gp-hero-grid--solo"
     return f"""
-  <section class="gp-hero">
-    <div class="wrap">
-      <a class="gp-back" href="../../index.html#juegos">&larr; Todos los juegos</a>
-      <div class="{clase_grid}">
-        <div class="gp-hero-text">
-          {h1}
-          <p class="gp-tagline">{e(j["tagline"])}</p>
-          <ul class="gp-badges">{insignias}</ul>
-          <div class="gp-actions">{botones}</div>
-          {nota}{descarga}
-        </div>
-        {media}
+<section class="gp-hero">
+  <div class="wrap">
+    <a class="gp-back" href="../../index.html#juegos">&larr; Todos los juegos</a>
+    <div class="{clase_grid}">
+      <div class="gp-hero-text">
+        {h1}
+        <p class="gp-tagline">{e(j["tagline"])}</p>
+        <ul class="gp-badges">{insignias}</ul>
+        <div class="gp-actions">{botones}</div>
+        {nota}{descarga}
       </div>
+      {media}
     </div>
-  </section>"""
+  </div>
+</section>"""
 
 
 def seccion(titulo, contenido, extra_clase=""):
     return f"""
-  <section class="gp-section {extra_clase}">
-    <div class="wrap">
-      <h2>{e(titulo)}</h2>
-      {contenido}
-    </div>
-  </section>"""
+<section class="gp-section {extra_clase}">
+  <div class="wrap">
+    <h2>{e(titulo)}</h2>
+    {contenido}
+  </div>
+</section>"""
 
 
 def cuerpo(j):
@@ -146,7 +146,7 @@ def cuerpo(j):
         partes.append(seccion("Capturas", f'<div class="gp-gallery">{imgs}</div>'))
 
     if j.get("controles"):
-        filas = "".join(f"<div><dt><kbd>{e(t)}</kbd></dt><dd>{e(a)}</dd></div>" for t, a in j["controles"])
+        filas = "".join(f'<div><dt><kbd>{e(t)}</kbd></dt><dd>{e(a)}</dd></div>' for t, a in j["controles"])
         partes.append(seccion("Controles", f'<dl class="gp-controls">{filas}</dl>'))
 
     if j.get("requisitos"):
@@ -170,13 +170,13 @@ def otros(actual):
         else:
             img = f'<img src="{ruta(icono)}" alt="" loading="lazy">'
         etiqueta = o["badges"][0] if o.get("badges") else ""
-        tarjetas += (f'<a class="gp-other" href="../{e(o["slug"])}/">{img}'
-                     f'<span><strong>{e(o["titulo"])}</strong><small>{e(etiqueta)}</small></span></a>')
+        tarjetas += (f'<a class="gp-other" href="../{o["slug"]}/">'
+                    f'<span><strong>{e(o["titulo"])}</strong><small>{e(etiqueta)}</small></span></a>')
     return seccion("Más juegos de HK", f'<div class="gp-others">{tarjetas}</div>', "gp-section--alt")
 
 
 def pagina(j):
-    titulo_pag = f'{j["titulo"]} — HK Entertainment'
+    titulo_pag = f'{j["titulo"]} - HK Entertainment'
     url = f'{DOMINIO}/catalogo/{j["slug"]}/'
     return f"""<!DOCTYPE html>
 <html lang="es">
@@ -197,7 +197,7 @@ def pagina(j):
 <link rel="icon" href="../../src/Logo%20HK%20c_hamster.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="../../paginas-juego.css">
 <script type="application/ld+json">
@@ -210,18 +210,19 @@ def pagina(j):
 
 <header class="site-header" id="top">
   <div class="wrap header-inner">
-    <a class="logo" href="../../index.html" aria-label="HK Entertainment — inicio">
+    <a class="logo" href="../../index.html" aria-label="HK Entertainment &ndash; inicio">
       <img class="logo-mark" src="../../src/Logo%20HK%20c_hamster.png" alt="" width="38" height="38">
       <span class="logo-text">HK Entertainment</span>
     </a>
 
-    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menú de navegación">
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
 
     <nav class="primary-nav" id="primaryNav">
       <a href="../../index.html#inicio">Inicio</a>
       <a href="../../index.html#juegos">Juegos</a>
+      <a href="../../index.html#propuestas">Propuestas</a>
       <a href="../../index.html#equipo">Equipo</a>
       <a href="../../index.html#contacto">Contacto</a>
       <a class="nav-cta" href="{PLAY_DEV}" target="_blank" rel="noopener">Google Play</a>
@@ -237,7 +238,7 @@ def pagina(j):
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <p>© <span id="year"></span> HK Entertainment · <a href="mailto:{EMAIL}">{EMAIL}</a></p>
+    <p>&copy; <span id="year"></span> HK Entertainment &middot; <a href="mailto:{EMAIL}">{EMAIL}</a></p>
     <a href="#top">Volver arriba</a>
   </div>
 </footer>
@@ -257,7 +258,7 @@ def main():
         print("ok  catalogo/%s/index.html" % j["slug"])
 
     hoy = date.today().isoformat()
-    urls = [f"{DOMINIO}/"] + [f'{DOMINIO}/catalogo/{j["slug"]}/' for j in JUEGOS]
+    urls = [f"{DOMINIO}/", f"{DOMINIO}/propuestas/"] + [f'{DOMINIO}/catalogo/{j["slug"]}/' for j in JUEGOS]
     sitemap = ['<?xml version="1.0" encoding="UTF-8"?>',
                '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for u in urls:
