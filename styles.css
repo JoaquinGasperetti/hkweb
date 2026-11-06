@@ -104,7 +104,7 @@ ul { list-style: none; margin: 0; padding: 0; }
 .btn:hover { transform: translateY(-2px); }
 
 .btn-primary {
-  background: linear-gradient(120deg, var(--pink), var(--violet));
+  background: linear-gradient(120deg, var(--pink), #b388ff);
   color: #100f18;
 }
 .btn-primary:hover {

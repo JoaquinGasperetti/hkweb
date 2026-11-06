@@ -170,13 +170,13 @@ def otros(actual):
         else:
             img = f'<img src="{ruta(icono)}" alt="" loading="lazy">'
         etiqueta = o["badges"][0] if o.get("badges") else ""
-        tarjetas += (f'<a class="gp-other" href="../{o["slug"]}/">'
+        tarjetas += (f'<a class="gp-other" href="../{o["slug"]}/">{img}'
                     f'<span><strong>{e(o["titulo"])}</strong><small>{e(etiqueta)}</small></span></a>')
     return seccion("Más juegos de HK", f'<div class="gp-others">{tarjetas}</div>', "gp-section--alt")
 
 
 def pagina(j):
-    titulo_pag = f'{j["titulo"]} - HK Entertainment'
+    titulo_pag = f'{j["titulo"]} — HK Entertainment'
     url = f'{DOMINIO}/catalogo/{j["slug"]}/'
     return f"""<!DOCTYPE html>
 <html lang="es">

@@ -126,8 +126,6 @@
           });
         }
 
-        // Intentar abrir el cliente de correo predeterminado automáticamente
-        window.location.href = mailtoUrl;
       }
 
       var resetBtn = document.getElementById("btnNuevaPropuesta");
