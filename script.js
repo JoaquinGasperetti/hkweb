@@ -164,6 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
       filter_social: 'Party & Lifestyle',
       upcoming_heading: 'Upcoming · In Active Development',
       bogato_desc: 'An open-world game featuring dragons, magic, and warring clans. Two explorable maps and a community benchmark system.',
+      bogato_stage: 'Not started yet · 0%',
       bogato_cta: 'Join the Discord Beta',
       ff_desc: 'Investigate an abandoned nuclear plant in search of anomalies. Nobody knows what creatures inhabit the radioactive zone.',
       prop_kicker: 'Build your game with HK',

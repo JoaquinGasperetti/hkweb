@@ -269,3 +269,33 @@ video.gp-media {
   .gp-reqs { grid-template-columns: 1fr; }
   .gp-section { padding: 44px 0; }
 }
+
+@media (max-width: 640px) {
+  .gp-hero {
+    padding: 28px 0 44px;
+  }
+  .gp-back {
+    margin-bottom: 18px;
+  }
+  .gp-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .gp-actions .btn {
+    width: 100%;
+  }
+  .gp-req {
+    padding: 18px;
+  }
+  .gp-gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+  }
+  .gp-controls {
+    grid-template-columns: 1fr;
+  }
+  .gp-others {
+    grid-template-columns: 1fr;
+  }
+}

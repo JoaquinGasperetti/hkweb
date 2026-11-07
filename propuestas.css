@@ -194,6 +194,8 @@
   font-weight: 600;
   color: var(--text);
   display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
   justify-content: space-between;
   align-items: center;
 }
@@ -345,6 +347,24 @@
     align-items: stretch;
   }
   .proposal-submit-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .proposal-panel {
+    padding: 20px 18px;
+  }
+  .proposal-card {
+    padding: 20px 16px;
+  }
+  .proposal-note-box {
+    padding: 16px 18px;
+  }
+  .proposal-feedback-actions {
+    flex-direction: column;
+  }
+  .proposal-feedback-actions .btn {
     width: 100%;
   }
 }
